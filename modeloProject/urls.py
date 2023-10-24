@@ -20,5 +20,6 @@ from modeloApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mascotas/', viewMascotas),
+    path('mascotas/', viewMascotas, name='lista_mascotas'),
+    path('addMascotas/', addMascota),
 ]
