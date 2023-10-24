@@ -21,5 +21,7 @@ from modeloApp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mascotas/', viewMascotas, name='lista_mascotas'),
-    path('addMascotas/', addMascota),
+    path('addMascota/', addMascota, name='agregarMascota'),
+    path('deleteMascota/<int:id>', deleteMascota, name='eliminarMascota'),
+    path('editMascota/<int:id>', editMascota, name='editarMascota'),
 ]
